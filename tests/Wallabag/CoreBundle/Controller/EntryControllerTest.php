@@ -1152,7 +1152,7 @@ class EntryControllerTest extends WallabagCoreTestCase
 
         $results = array_values(array_unique($matches[0]));
 
-        $ids = [5, 8, 7, 9];
+        $ids = [8, 7, 9, 5];
 
         foreach ($results as $key => $result) {
             $this->assertSame('test title entry' . $ids[$key], $result);
@@ -1218,7 +1218,7 @@ class EntryControllerTest extends WallabagCoreTestCase
 
         $results = array_values(array_unique($matches[0]));
 
-        $ids = [6, 8, 7, 9];
+        $ids = [8, 7, 9, 6];
 
         foreach ($results as $key => $result) {
             $this->assertSame('test title entry' . $ids[$key], $result);
